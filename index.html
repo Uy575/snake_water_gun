@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="./script.js" defer></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="gameContainer">
+       <div class="gameHeader">
+        Rock <span style="color: brown"> <i class="fa-regular fa-hand-back-fist"></i></span> Paper <span style="color:white"><i class="fa-regular fa-hand"></i></span> Scissors <span style="color:red"><i class="fa-solid fa-scissors"></i></span>
+       </div>
+    <span id="userChoice">Your Choice = 0</span>
+    <div class="userIcons" id="userIcons">
+        <i class="fa-regular fa-hand-back-fist" id="userRock" onclick="userChoiceFunc('1')"></i>
+        <i class="fa-regular fa-hand" id="userPaper" onclick="userChoiceFunc('2')"></i>
+        <i class="fa-solid fa-scissors" id="userScissors" onclick="userChoiceFunc('3')"></i>
+    </div>
+      
+    
+    <span id="compChoice">Computer's Choice = 0</span>
+    <div class="compIcons" id="compIcons">
+        <i class="fa-regular fa-hand-back-fist" id="userRock"></i>
+        <i class="fa-regular fa-hand" id="compPaper" ></i>
+        <i class="fa-solid fa-scissors" id="compScissors"></i>
+    </div>
+
+    <div class="resetIcon" id="resetIcon">
+        <i class="fa-sharp fa-solid fa-recycle"></i>
+        <span class="playa"> Play Again</span>
+    </div>
+
+    <div class="result" id="result">
+        <h3 id="finalResult">
+            Result
+        </h3>
+    </div>
+</div>
+</body>
+</html>
